@@ -1,0 +1,51 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "60/fuel";
+    object      diffH2Ofuel;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -1 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    aclSides
+    {
+        type            zeroGradient;
+    }
+    agdlSides
+    {
+        type            zeroGradient;
+    }
+    fuelInlet
+    {
+        type            zeroGradient;
+    }
+    fuelOutlet
+    {
+        type            zeroGradient;
+    }
+    fuel_to_electrolyte
+    {
+        type            zeroGradient;
+    }
+    fuel_to_abp
+    {
+        type            zeroGradient;
+    }
+}
+
+
+// ************************************************************************* //
