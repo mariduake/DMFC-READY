@@ -24,7 +24,7 @@ boundaryField
     fuelInlet
     {
         type            fixedValue;
-        value           uniform (0 0 1.0);
+        value           uniform (0 0 12.5);
     }
 
     fuelOutlet
